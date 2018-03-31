@@ -35,6 +35,6 @@ function displayError(error) {
   // console.log('error', error)
   const results = $('#results')[0]
   // console.log('results', results)
-  results.html('there was an error, please try again')
+  results.html = 'there was an error, please try again'
 
 }
