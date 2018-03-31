@@ -18,7 +18,15 @@ function displayRepositories(data) {
   console.log('success', data)
   results.html = ''
   data.items.forEach(rep => {
-    results.innerHTML += `<div class='res'>${rep.name}<br>${rep.html_url}</div><br>`
+    results.innerHTML += `<div class='res'>
+    ${rep.name}<br>
+    ${rep.description}<br>
+    <a href="${rep.html_url}">Link</a><br>
+    <h5>Ownder Information</h5>
+    ${rep.owner.login}<br>
+    <a href="${rep.owner.html_url}">Profile</a><br>
+    <img src="${rep.owner.avatar_url}">
+    </div><br>`
   })
 }
 
