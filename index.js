@@ -47,3 +47,9 @@ function showCommits(element) {
   const url = `https://api.github.com/repos/${owner}/{rep}/commits`
   $.get(url).done(displayCommits).fail(displayError)
 }
+
+function displayCommits(data) {
+  const details = $('#details')[0]
+  details.innerHTML = ''
+  console.log(data)
+}
