@@ -1,6 +1,10 @@
 $(document).ready(function (){
 });
 
+const searchTerms = $('#searchTerms')
+
 function searchRepositories() {
-  return
+  const url = 'https://api.github.com/search/repositories'
+  const term = searchTerms.value.params()
+  $.get()
 }
