@@ -16,6 +16,12 @@ function searchRepositories() {
 
 function displayRepositories(data) {
   console.log('success', data)
+  details.empty()
+  data.items.forEach(rep => {
+    details.html += `
+      <div>${rep.name}<br>${rep.html_url}</div>
+    `
+  })
 }
 
 function displayError(error) {
