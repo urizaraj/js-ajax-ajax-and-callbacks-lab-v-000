@@ -51,5 +51,13 @@ function showCommits(element) {
 function displayCommits(data) {
   const details = $('#details')[0]
   details.innerHTML = ''
-  console.log(data)
+  console.log(data[0])
+  data.forEach(commit => {
+    details.innerHTML += `
+      <div class='res'>
+      ${commit.sha}<br>
+      ${commit.commit.author.name}<br>
+
+    `
+  })
 }
