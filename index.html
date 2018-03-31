@@ -20,10 +20,8 @@
   </head>
   <body>
     <main id="main">
-      <form onsubmit="searchRepositories();return false">
-        <input type="text" id="search" placeholder="Enter repository...">
-        <input type="submit" id="submit" value="Find Repository">
-      </form>
+      <input type="text" id="search" placeholder="Enter repository...">
+      <a href="javascript:searchRepositories();return false">Search</a>
       <div id="errors"></div>
     </main>
     <div class="flexbox-container">
