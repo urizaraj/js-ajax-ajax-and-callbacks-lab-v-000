@@ -18,7 +18,7 @@ function displayRepositories(data) {
   console.log('success', data)
   details.html = ''
   data.items.forEach(rep => {
-    details.innerHTML += `<div>${rep.name}<br>${rep.html_url}</div>`
+    results.innerHTML += `<div>${rep.name}<br>${rep.html_url}</div>`
   })
 }
 
