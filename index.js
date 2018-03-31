@@ -25,7 +25,7 @@ function displayRepositories(data) {
     by ${rep.owner.login}<br>
     <a href="${rep.owner.html_url}">Profile</a><br>
     <img src="${rep.owner.avatar_url}">
-    </div><br>`
+    </div>`
   })
 }
 
