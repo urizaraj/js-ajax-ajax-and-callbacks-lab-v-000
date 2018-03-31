@@ -22,7 +22,7 @@ function displayRepositories(data) {
     ${rep.name}<br>
     ${rep.description}<br>
     <a href="${rep.html_url}">Link</a><br>
-    <h5>Ownder Information</h5>
+    <h5>Owner Information</h5>
     ${rep.owner.login}<br>
     <a href="${rep.owner.html_url}">Profile</a><br>
     <img src="${rep.owner.avatar_url}">
