@@ -9,7 +9,7 @@ function searchRepositories() {
     q: searchTerms.value
   }
   const url = base + $.param(terms)
-  $.get(url).done(displayRepositories).failure(displayError)
+  $.get(url).done(displayRepositories).fail(displayError)
 }
 
 function displayRepositories(data) {
