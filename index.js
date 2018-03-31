@@ -41,6 +41,7 @@ function displayError(error) {
 
 }
 
-function showCommits(url) {
-
+function showCommits(element) {
+  console.log(element)
+  let rep = element.dataset.repository
 }
