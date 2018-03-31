@@ -9,4 +9,9 @@ function searchRepositories() {
     q: searchTerms.value
   }
   const url = base = $.param(terms)
+  $.get(url).done(displayRepositories).failure(displayError)
+}
+
+function displayRepositories(data) {
+  console.log('success', data)
 }
