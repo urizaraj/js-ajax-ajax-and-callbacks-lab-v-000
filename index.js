@@ -16,7 +16,7 @@ function searchRepositories() {
 
 function displayRepositories(data) {
   console.log('success', data)
-  details.empty()
+  details.html = ''
   data.items.forEach(rep => {
     details.html += `
       <div>${rep.name}<br>${rep.html_url}</div>
