@@ -45,7 +45,7 @@ function showCommits(element) {
   console.log(element)
   let rep = element.dataset.repository
   let owner = element.dataset.owner
-  const url = `https://api.github.com/repos/${owner}/{rep}/commits`
+  const url = `https://api.github.com/repos/${owner}/${rep}/commits`
   console.log(url)
   $.get(url).done(displayCommits).fail(displayError)
 }
