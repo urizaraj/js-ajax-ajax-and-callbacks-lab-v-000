@@ -24,7 +24,8 @@ function displayRepositories(data) {
     ${rep.name}<br>
     ${rep.description}<br>
     <a href="${rep.html_url}">Link</a><br>
-    <a href="javascript:showCommits(${rep.commits_url})">Show Commits</a>
+    <a data-repository="${rep.name}" data-owner="${rep.owner.login}" href="javascript:showCommits()">
+    Show Commits</a>
     by ${rep.owner.login}<br>
     <a href="${rep.owner.html_url}">Profile</a><br>
     <img src="${rep.owner.avatar_url}">
@@ -40,6 +41,6 @@ function displayError(error) {
 
 }
 
-function showCommits() {
+function showCommits(url) {
 
 }
