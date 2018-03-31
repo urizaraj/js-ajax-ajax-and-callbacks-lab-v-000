@@ -15,3 +15,7 @@ function searchRepositories() {
 function displayRepositories(data) {
   console.log('success', data)
 }
+
+function displayError(error) {
+  console.log('error', error)
+}
