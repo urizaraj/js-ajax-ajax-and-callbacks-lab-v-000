@@ -34,7 +34,7 @@ function displayRepositories(data) {
 }
 
 function displayError(error) {
-  // console.log('error', error)
+  console.log('error', error)
   const errors = $('#errors')[0]
   // console.log('results', results)
   errors.innerHTML = 'there was an error, please try again'
