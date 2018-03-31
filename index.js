@@ -24,7 +24,7 @@ function displayRepositories(data) {
     ${rep.name}<br>
     ${rep.description}<br>
     <a href="${rep.html_url}">Link</a><br>
-    <a data-repository="${rep.name}" data-owner="${rep.owner.login}" href="javascript:showCommits(this)">
+    <a data-repository="${rep.name}" data-owner="${rep.owner.login}" onclick="showCommits(this)">
     Show Commits</a>
     by ${rep.owner.login}<br>
     <a href="${rep.owner.html_url}">Profile</a><br>
